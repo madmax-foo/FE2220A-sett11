@@ -6,12 +6,12 @@
        <thead>
          <tr>
            <th> n:</th>
-           <th> Prodotto</th>
-           <th> immagine</th>
+           <th> Product</th>
+           <th> img</th>
            <th> description</th>
            <th> price</th>
            <th> quantity</th>
-           <th> total</th>
+
            <th> action</th>
           </tr>
        </thead>
@@ -19,11 +19,11 @@
          <tr *ngFor="let tel of prodotto; let i = index">
            <td>{{i+1}}</td>
            <td>{{tel.name}}</td>
-           <td>{{tel.path}}</td>
-           <td>${{tel.price}}</td>
+           <td><img src="{{tel.path}}" width="50vw"></td>
            <td>{{tel.description}}</td>
+           <td>${{tel.price}}</td>
            <td>1</td>
-           <td>{{tel.name}}</td>
+
            <td><button class="btn btn-danger" (click)="emptycart()">elimina</button></td>
          </tr>
         </tbody>
