@@ -1,0 +1,9 @@
+<div class="card  text-center m-auto" style="width: 18rem;">
+
+  <div class="card-body m-bottom 2" *ngFor="let tel of telefoni">
+    <img src="{{tel.path}}" width="50vw">
+    <h5 class="card-title text-center">{{tel.name}}</h5>
+    <p class="card-text">{{tel.description}}</p>
+    <p class="card-text">${{tel.price}}</p>
+  </div>
+</div>

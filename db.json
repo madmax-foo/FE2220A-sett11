@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "path": "assets/images/img1.jpeg",
+      "name": "Nokia 33-10",
+      "price": 799,
+      "description": "Uno dei migliori telefonini di sempre, forgiato nella pietra"
+    },
+    {
+      "id": 2,
+      "path": "assets/images/img2.jpg",
+      "name": "Samsung z500",
+      "price": 699,
+      "description": "Ha un'ottima fotocamera anche se piccolo"
+    },
+    {
+      "id": 3,
+      "path": "assets/images/img3.jpeg",
+      "name": "Siemens MC60",
+      "price": 299,
+      "description": "Brutto, ma solido"
+    }
+  ],
+  "prices": [
+    {
+      "type": "1-Giorno",
+      "price": 25.99
+    },
+    {
+      "type": "2-Giorni",
+      "price": 9.99
+    },
+    {
+      "type": "5-Giorni",
+      "price": 2.99
+    }
+  ]
+}

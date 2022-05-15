@@ -1,0 +1,49 @@
+<ng-container *ngIf="prodotto.length !=0">
+  <div class="container">
+  <div class="card-table">
+   <div class="cart-product">
+     <table class="table table-responsive">
+       <thead>
+         <tr>
+           <th> n:</th>
+           <th> Prodotto</th>
+           <th> immagine</th>
+           <th> description</th>
+           <th> price</th>
+           <th> quantity</th>
+           <th> total</th>
+           <th> action</th>
+          </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let tel of prodotto; let i = index">
+           <td>{{i+1}}</td>
+           <td>{{tel.name}}</td>
+           <td>{{tel.path}}</td>
+           <td>${{tel.price}}</td>
+           <td>{{tel.description}}</td>
+           <td>1</td>
+           <td>{{tel.name}}</td>
+           <td><button class="btn btn-danger" (click)="emptycart()">elimina</button></td>
+         </tr>
+        </tbody>
+        <tr>Totale &nbsp; {{grandTotal}}</tr>
+        <td><button class="btn btn-primary">Acquista</button></td>
+
+
+
+
+     </table>
+    </div>
+  </div>
+</div>
+
+
+</ng-container>
+
+
+<ng-container *ngIf="prodotto.length ==0">
+
+Carrello Vuoto
+
+</ng-container>
